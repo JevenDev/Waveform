@@ -1,7 +1,7 @@
 # Waveform Viewer
 _BY JEVEN RANDHAWA_
 
-# [See it in action](https://jevendev.github.io/Web-Poster/)
+# [See it in action](https://jevendev.github.io/Waveform/)
 
 ### ABOUT
 Waveform Viewer lets you view waveforms using the web! No weird fees, no needless features.
