@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waveform Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+<body>
+
+    <h1>Waveform Viewer</h1>
+    <h2>See waveforms for audio files, right click to save!</h2>
+
+    <div class="controls">
+        <div class="control">
+            <label>Wave Color</label>
+            <input type="color" id="waveColor" value="#8888ff">
+        </div>
+        <div class="control">
+            <label>Bar Width</label>
+            <input type="range" id="barWidth" min="1" max="10" value="2">
+        </div>
+        <div class="control">
+            <label>Bar Gap</label>
+            <input type="range" id="barGap" min="0" max="5" value="1">
+        </div>
+        <div class="control">
+            <label>Height</label>
+            <input type="range" id="height" min="50" max="200" value="128">
+        </div>
+    </div>
+
+    <div id="waveform-stack"></div>
+    <div id="drop-zone">🎵 Drag and drop audio files here 🎵</div>
+
+<script src="script.js"></script>
+</body>
+</html>

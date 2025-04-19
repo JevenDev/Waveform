@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    font-family: "Special Gothic", sans-serif;
+    text-align: center;
+    background: #111;
+}
+  
+h1 {
+    font-size: 2.5rem;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    margin: 2rem 0 0.5rem 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-family: "Special Gothic", sans-serif;
+    margin: 0 0 2rem 0;
+    transform: scaleX(1.5);
+    display: inline-block;
+}
+
+/* all controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}   
+
+/* individual controls */
+.control {
+    display: grid;
+    place-items: center;
+    gap: 8px;
+    min-width: 100px;
+}
+
+/* control labels */
+.control label {
+    color: #aaa;
+    font-family: "Special Gothic", sans-serif;
+    margin-bottom: 10px;
+}
+  
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 20px;
+    width: 150px;
+    height: 6px;
+    background: #333;
+    border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: #8888ff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #aaaaff;
+    transform: scale(1.2);
+}
+
+input[type="color"] {
+    appearance: none;
+    border: none;
+    width: 50px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 8px;
+    }
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 8px;
+}
+
+input[type="color"]:hover {
+    transform: scale(1.05);
+}
+
+#waveform-stack {
+    width: 90%;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wave-wrapper {
+    background: #222;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.wave-filename {
+    color: #ccc;
+    font-family: "Special Gothic", sans-serif;
+    margin-bottom: 20px;
+}
+
+#drop-zone {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 60%;
+    padding: 20px;
+    border: 2px dashed #555;
+    border-radius: 12px 12px 0 0;
+    background: #1a1a1a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#drop-zone.hover {
+    background: #2a2a2a;
+    border-color: #999;
+}  
+.wave-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    color: #ff5f5f;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: 0.2s;
+}
+
+.delete-button:hover {
+    color: #ff8a8a;
+}
